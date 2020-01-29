@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Website Title
-image: /img/home-jumbotron.jpg
+image: /img/gulf-shores-1.jpg
 heading: Website Heading
 subheading: Website Subheading
 mainpitch:
