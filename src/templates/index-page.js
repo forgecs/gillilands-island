@@ -19,7 +19,7 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <section
-      className="h-screen w-screen bg-center bg-cover"
+      className="h-screen bg-center bg-cover"
       // style={{
       //   backgroundImage: `url(${sunset})`,
       // }}
