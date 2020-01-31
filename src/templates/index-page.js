@@ -19,7 +19,7 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <div
-      className="mt-0"
+      className="bg-fixed bg-center bg-cover mt-0"
       // style={{
       //   backgroundImage: `url(${
       //     !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -30,9 +30,9 @@ export const IndexPageTemplate = ({
       // }}
       style={{
         backgroundImage: `url(${sunset})`,
-        backgroundSize: `cover`,
-        backgroundPosition: `center`,
-        backgroundAttachment: `fixed`,
+        // backgroundSize: `cover`,
+        // backgroundPosition: `center`,
+        // backgroundAttachment: `fixed`,
         height: `26rem`
       }}
     >
