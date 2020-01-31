@@ -19,7 +19,7 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <div
-      className="w-screen bg-fixed bg-center bg-cover mt-0"
+      className="w-screen bg-fixed bg-center mt-0"
       // style={{
       //   backgroundImage: `url(${
       //     !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -33,6 +33,8 @@ export const IndexPageTemplate = ({
         // backgroundSize: `cover`,
         // backgroundPosition: `center`,
         // backgroundAttachment: `fixed`,
+        backgroundRepeat: `no-repeat`,
+        backgroundSize: `200%`,
         height: `26rem`
       }}
     >
