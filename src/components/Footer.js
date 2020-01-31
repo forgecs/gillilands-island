@@ -57,7 +57,7 @@ const Footer = class extends React.Component {
         <div className="flex justify-around py-10">
           <a
             title="facebook"
-            className="bg-teal-100 p-3 rounded-full"
+            className="bg-teal-100 hover:bg-teal-200 p-3 rounded-full"
             href="https://facebook.com"
           >
             <img
@@ -68,7 +68,7 @@ const Footer = class extends React.Component {
           </a>
           <a
             title="twitter"
-            className="bg-teal-100 p-3 rounded-full sm:mx-2"
+            className="bg-teal-100 hover:bg-teal-200 p-3 rounded-full sm:mx-2"
             href="https://twitter.com"
           >
             <img
@@ -80,7 +80,7 @@ const Footer = class extends React.Component {
           </a>
           <a
             title="instagram"
-            className="bg-teal-100 p-3 rounded-full"
+            className="bg-teal-100 hover:bg-teal-200 p-3 rounded-full"
             href="https://instagram.com"
           >
             <img

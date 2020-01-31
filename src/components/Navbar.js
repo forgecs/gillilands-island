@@ -35,7 +35,7 @@ const Navbar = () => {
               type="button"
               className="text-teal-600 hover:bg-gray-300 focus:bg-gray-300 rounded-full focus:outline-none p-1"
             >
-              <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <svg className="h-10 w-10 fill-current" viewBox="0 0 24 24">
                 {isOpen ? (
                   <path
                     fillRule="evenodd"

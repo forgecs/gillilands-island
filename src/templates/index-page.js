@@ -6,8 +6,10 @@ import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 
+import sunset from "../img/sunset-1.jpg";
+
 export const IndexPageTemplate = ({
-  image,
+  // image,
   title,
   heading,
   subheading,
@@ -18,11 +20,17 @@ export const IndexPageTemplate = ({
   <div>
     <div
       className="w-full bg-cover bg-bottom mt-0"
+      // style={{
+      //   backgroundImage: `url(${
+      //     !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+      //   })`,
+      //   backgroundPosition: `top left`,
+      //   backgroundAttachment: `fixed`,
+      //   height: `26rem`
+      // }}
       style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
+        backgroundImage: `url(${sunset})`,
+        backgroundPosition: `center`,
         backgroundAttachment: `fixed`,
         height: `26rem`
       }}
@@ -36,7 +44,7 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div>
-    
+
     <section className="section section--gradient py-16">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-gray-900 text-2xl">{mainpitch.title}</h1>
@@ -88,7 +96,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
+        // image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
