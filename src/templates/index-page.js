@@ -18,8 +18,17 @@ export const IndexPageTemplate = ({
   intro
 }) => (
   <div>
-    <div
-      className="w-screen bg-fixed bg-center mt-0"
+    <section
+      className="h-screen w-screen bg-center bg-cover"
+      style={{
+        backgroundImage: `url(${sunset})`,
+        // backgroundSize: `cover`,
+        // backgroundPosition: `center`,
+        // backgroundAttachment: `fixed`,
+        // backgroundRepeat: `no-repeat`,
+        // backgroundSize: `200%`,
+        // height: `26rem`
+      }}
       // style={{
       //   backgroundImage: `url(${
       //     !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -28,15 +37,6 @@ export const IndexPageTemplate = ({
       //   backgroundAttachment: `fixed`,
       //   height: `26rem`
       // }}
-      style={{
-        backgroundImage: `url(${sunset})`,
-        // backgroundSize: `cover`,
-        // backgroundPosition: `center`,
-        // backgroundAttachment: `fixed`,
-        backgroundRepeat: `no-repeat`,
-        backgroundSize: `200%`,
-        height: `26rem`
-      }}
     >
       <div className="h-full flex flex-col justify-center items-center">
         <h1 className="text-3xl sm:text-5xl font-bold bg-gray-100 rounded shadow px-4 py-2">
@@ -46,7 +46,7 @@ export const IndexPageTemplate = ({
           {subheading}
         </h3>
       </div>
-    </div>
+    </section>
 
     <section className="section section--gradient py-16">
       <div className="flex flex-col justify-center items-center">
