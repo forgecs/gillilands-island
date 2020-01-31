@@ -15,11 +15,9 @@ tags:
 The best restaurants in the Gulf Shores/Orange Beach area:
 
 1. The Anchor Bar and Grill
-
 2. The Gulf
-
 3. Fishers
-
 4. Big Fish
-
 5. Playa
+
+   Check them out while you are here!
