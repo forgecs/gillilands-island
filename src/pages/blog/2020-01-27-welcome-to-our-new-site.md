@@ -12,6 +12,8 @@ tags:
   - Orange Beach
   - Restaurants
 ---
+![Gulf Shores Beach Houses](/img/gulf-shores-1.jpg "Gulf Shores Beach Houses")
+
 The best restaurants in the Gulf Shores/Orange Beach area:
 
 1. The Anchor Bar and Grill
