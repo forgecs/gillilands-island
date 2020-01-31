@@ -9,7 +9,7 @@ import BlogRoll from "../components/BlogRoll";
 import sunset from "../img/sunset-1.jpg";
 
 export const IndexPageTemplate = ({
-  // image,
+  image,
   title,
   heading,
   subheading,
@@ -30,6 +30,7 @@ export const IndexPageTemplate = ({
       // }}
       style={{
         backgroundImage: `url(${sunset})`,
+        backgroundSize: `cover`,
         backgroundPosition: `center`,
         backgroundAttachment: `fixed`,
         height: `26rem`
@@ -96,7 +97,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        // image={frontmatter.image}
+        image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
@@ -123,13 +124,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+            
         heading
         subheading
         mainpitch {
@@ -155,3 +150,11 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+// image {
+//   childImageSharp {
+//     fluid(maxWidth: 2048, quality: 100) {
+//       ...GatsbyImageSharpFluid
+//     }
+//   }
+// }
