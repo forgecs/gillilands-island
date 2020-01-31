@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Gilliland's Island
-image: /img/gulf-shores-1.jpg
+image: /img/sunset-1.jpg
 heading: Website Heading
 subheading: 'Welcome to Gulf Shores, AL'
 mainpitch:
