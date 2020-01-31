@@ -9,10 +9,9 @@ export default class BlogIndexPage extends React.Component {
     return (
       <Layout>
         <div
-          className="w-full bg-cover bg-bottom flex justify-center items-center mt-0"
+          className="h-screen w-full bg-cover bg-bottom flex justify-center items-center mt-0"
           style={{
             backgroundImage: `url('/img/blog-index.jpg')`,
-            height: `26rem`
           }}
         >
           <h1

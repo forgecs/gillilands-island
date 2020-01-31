@@ -1,30 +1,36 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, graphql, StaticQuery } from "gatsby";
+import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
 class BlogRoll extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { data } = this.props;
+    const { edges: posts } = data.allMarkdownRemark;
 
     return (
       <div className="flex justify-center flex-wrap max-w-4xl pb-16">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="flex-grow max-w-sm rounded shadow-lg mt-10 mx-5" key={post.id}>
+            <div
+              className="flex-grow max-w-sm rounded shadow-lg mt-10 mx-5"
+              key={post.id}
+            >
               <article
                 className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
+                  post.frontmatter.featuredpost ? "is-featured" : ""
                 }`}
               >
-                <header>
+                <header className="flex flex-col">
                   {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
+                    <div
+                      className="featured-thumbnail flex-grow mb-1"
+                      // style={{ flexBasis: "40%"}}
+                    >
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                          alt: `featured image thumbnail for post ${post.frontmatter.title}`
                         }}
                       />
                     </div>
@@ -46,7 +52,10 @@ class BlogRoll extends React.Component {
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="font-semibold text-teal-700 px-4 py-2 rounded border-2 border-teal-500 hover:bg-teal-500 hover:text-blue-grey-050" to={post.fields.slug}>
+                  <Link
+                    className="font-semibold text-teal-700 px-4 py-2 rounded border-2 border-teal-500 hover:bg-teal-500 hover:text-blue-grey-050"
+                    to={post.fields.slug}
+                  >
                     Keep Reading →
                   </Link>
                 </p>
@@ -54,17 +63,17 @@ class BlogRoll extends React.Component {
             </div>
           ))}
       </div>
-    )
+    );
   }
 }
 
 BlogRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-}
+      edges: PropTypes.array
+    })
+  })
+};
 
 export default () => (
   <StaticQuery
@@ -101,4 +110,4 @@ export default () => (
     `}
     render={(data, count) => <BlogRoll data={data} count={count} />}
   />
-)
+);
