@@ -20,23 +20,14 @@ export const IndexPageTemplate = ({
   <div>
     <section
       className="h-screen w-screen bg-center bg-cover"
-      style={{
-        backgroundImage: `url(${sunset})`,
-        // backgroundSize: `cover`,
-        // backgroundPosition: `center`,
-        // backgroundAttachment: `fixed`,
-        // backgroundRepeat: `no-repeat`,
-        // backgroundSize: `200%`,
-        // height: `26rem`
-      }}
       // style={{
-      //   backgroundImage: `url(${
-      //     !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-      //   })`,
-      //   backgroundPosition: `top left`,
-      //   backgroundAttachment: `fixed`,
-      //   height: `26rem`
+      //   backgroundImage: `url(${sunset})`,
       // }}
+      style={{
+        backgroundImage: `url(${
+          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+        })`
+      }}
     >
       <div className="h-full flex flex-col justify-center items-center">
         <h1 className="text-3xl sm:text-5xl font-bold bg-gray-100 rounded shadow px-4 py-2">
@@ -126,7 +117,13 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-            
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         heading
         subheading
         mainpitch {
@@ -152,11 +149,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-// image {
-//   childImageSharp {
-//     fluid(maxWidth: 2048, quality: 100) {
-//       ...GatsbyImageSharpFluid
-//     }
-//   }
-// }
