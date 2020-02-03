@@ -5,9 +5,11 @@ image: /img/sunset-1.jpg
 heading: Website Heading
 subheading: 'Gulf Shores, AL'
 mainpitch:
-  title: Main Pitch Title
-  description: |
-    Main Pitch Description
+  title: Come Get Away to Gilliland's Island
+  description: >-
+    If you are looking for that beach getaway, look no farther. Located on the
+    beautiful beaches of the Gulf of Mexico in Alabama, Gilliland's Island is
+    the perfect spot for you and your family.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
