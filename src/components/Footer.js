@@ -11,11 +11,7 @@ const Footer = class extends React.Component {
     return (
       <footer className="footer text-blue-grey-900 bg-teal-050 font-semibold border-t-4 border-teal-400 flex flex-col sm:flex-row  sm:justify-around sm:items-center">
         <div className="flex justify-center items-center py-5 sm:py-0">
-          <img
-            src={logo}
-            alt="Kaldi"
-            className="h-20 rounded-full"
-          />
+          <img src={logo} alt="Kaldi" className="h-20 rounded-full" />
         </div>
         <section className="menu">
           <ul className="flex flex-col justify-center items-center">
@@ -89,6 +85,13 @@ const Footer = class extends React.Component {
               style={{ width: "1em", height: "1em" }}
             />
           </a>
+        </div>
+        <div className="flex flex-col items-center py-4">
+          <p>© {new Date().getFullYear()} Gilliland Family LLC</p>
+          <div className="mt-3">
+            Built by {" "}
+            <a href="https://www.forgecs.com/" className="text-teal-500 border-b-2 border-teal-300 hover:text-teal-300 pb-1">Forge Creative Systems</a>
+          </div>
         </div>
       </footer>
     );
