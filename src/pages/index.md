@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Gilliland's Island
 image: /img/sunset-1.jpg
-heading: Website Heading
+heading: What We Offer
 subheading: 'Gulf Shores, AL'
 mainpitch:
   title: Come Get Away to Gilliland's Island
@@ -46,16 +46,16 @@ intro:
         sale. The full price you pay goes to the artist.
     - image: /img/relaxation.png
       text: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-        provident, mollitia nulla ipsum, minus enim ipsa a, laborum vitae
-        reiciendis recusandae tempora esse. Quidem reiciendis cumque provident
-        ea aliquam cum.
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+        Come soak up the sun on the white sand beaches of Gulf Shores, Alabama.
+        You quickly realize these are some of the finest beaches in the world
+        and want to never leave. Feel the sand between your toes, splash around
+        in the turquoise water, smell the salty air and admire the jaw-dropping
+        sunsets.
+  heading: What We Offer
+  description: >-
+    Gilliland's Island is the ultimate spot for beach lovers who want a family
+    friendly getaway. We take vacation, relaxation and beach time seriously and
+    we’re glad to share that experience to anyone.
 main:
   heading: Great coffee with no compromises
   description: >
