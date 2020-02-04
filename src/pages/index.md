@@ -11,10 +11,9 @@ mainpitch:
     beautiful beaches of the Gulf of Mexico in Alabama, Gilliland's Island is
     the perfect spot for you and your family.
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Gilliland's Island is the ultimate spot for beach lovers who want a family
+  friendly getaway. We take vacation, relaxation and beach time seriously and
+  we’re glad to share that experience to anyone.
 intro:
   blurbs:
     - image: /img/coffee-gear.png
