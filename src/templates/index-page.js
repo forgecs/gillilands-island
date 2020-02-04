@@ -6,8 +6,6 @@ import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 
-import sunset from "../img/sunset-1.jpg";
-
 export const IndexPageTemplate = ({
   image,
   title,
@@ -20,9 +18,6 @@ export const IndexPageTemplate = ({
   <div>
     <section
       className="h-screen bg-center bg-cover"
-      // style={{
-      //   backgroundImage: `url(${sunset})`,
-      // }}
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -42,7 +37,9 @@ export const IndexPageTemplate = ({
     <section className="py-16">
       <div className="flex flex-col justify-center items-center text-center max-w-lg px-4 mx-auto">
         <h1 className="text-gray-900 text-2xl">{mainpitch.title}</h1>
-        <h3 className="text-gray-800 text-lg leading-relaxed mt-4">{mainpitch.description}</h3>
+        <h3 className="text-gray-800 text-lg leading-relaxed mt-4">
+          {mainpitch.description}
+        </h3>
       </div>
 
       <div className="flex flex-col items-center text-center max-w-xl px-4 mx-auto mt-10">

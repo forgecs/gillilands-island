@@ -54,7 +54,7 @@ const Footer = class extends React.Component {
           <a
             title="facebook"
             className="bg-teal-100 hover:bg-teal-200 p-3 rounded-full"
-            href="https://facebook.com"
+            href="https://www.facebook.com/GillilandsIslandGulfShores"
           >
             <img
               src={facebook}
@@ -89,8 +89,13 @@ const Footer = class extends React.Component {
         <div className="flex flex-col items-center py-4">
           <p>© {new Date().getFullYear()} Gilliland Family LLC</p>
           <div className="mt-3">
-            Built by {" "}
-            <a href="https://www.forgecs.com/" className="text-teal-500 border-b-2 border-teal-300 hover:text-teal-300 pb-1">Forge Creative Systems</a>
+            Built by{" "}
+            <a
+              href="https://www.forgecs.com/"
+              className="text-teal-500 border-b-2 border-teal-300 hover:text-teal-300 pb-1"
+            >
+              Forge Creative Systems
+            </a>
           </div>
         </div>
       </footer>
